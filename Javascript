@@ -1,0 +1,16 @@
+// logout
+document.querySelector(".logout").addEventListener("click", () => {
+  alert("Você saiu do Helptism 💙");
+});
+
+// interação cards
+document.querySelectorAll(".card").forEach(card => {
+  card.addEventListener("click", () => {
+    alert("Abrindo: " + card.innerText);
+  });
+});
+
+// pesquisa simples (demo)
+document.querySelector(".search").addEventListener("input", (e) => {
+  console.log("Buscando:", e.target.value);
+});
